@@ -16,5 +16,45 @@ namespace OTS2023_ConventorApp
         {
             InitializeComponent();
         }
+
+        private void button1_Convert(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioMass_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = "Pounds";
+            label2.Text = "kg";
+
+        }
+
+        private void radiolength_CheckedChanged(object sender, EventArgs e)
+        {
+            label1.Text = "Feet";
+            label2.Text = "m";
+
+        }
+
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+           // textBox2.Text=(Convert.ToInt32(textBox1.Text).ToString());
+        }
+
+
+        public void Convert()
+        {
+           /* if (radioMass_CheckedChanged(this,))
+            {
+
+            }*/
+
+
+        }
     }
 }
