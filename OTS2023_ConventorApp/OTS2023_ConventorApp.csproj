@@ -46,13 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomMoneyConventer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <None Include="IConvert" />
+    <Compile Include="IConvert.cs" />
+    <Compile Include="ICustomMoneyConvert.cs" />
+    <Compile Include="ITimeConvert.cs" />
+    <Compile Include="TimeConventer.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="LengthConventer.cs" />
+    <Compile Include="MassConventer.cs" />
+    <Compile Include="MoneyConventer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

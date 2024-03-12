@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace OTS2023_ConventorApp
 {
-    internal interface IConvert
+    internal interface ICustomMoneyConvert
     {
-        public void Convert1();
+        string ConvertCustomMoney(string value);
     }
 }
