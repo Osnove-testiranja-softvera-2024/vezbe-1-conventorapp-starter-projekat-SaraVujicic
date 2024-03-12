@@ -101,6 +101,7 @@ namespace OTS2023_ConventorApp
                 MoneyConventer converter = new MoneyConventer();
                 if (radioArray.Checked)
                 {
+
                     try
                     {
                         textBox2.Text = converter.ConvertArray(textBox1.Text).ToString();
