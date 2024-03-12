@@ -29,26 +29,12 @@
         private void InitializeComponent()
         {
             this.radioMass = new System.Windows.Forms.RadioButton();
-            this.radiolength = new System.Windows.Forms.RadioButton();
+            this.radioLength = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btnConvert = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioMoney = new System.Windows.Forms.RadioButton();
-            this.radioTime = new System.Windows.Forms.RadioButton();
-            this.radioCustom = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioHours = new System.Windows.Forms.RadioButton();
-            this.radioMinutes = new System.Windows.Forms.RadioButton();
-            this.radioSeconds = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioSingle = new System.Windows.Forms.RadioButton();
-            this.radioArray = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // radioMass
@@ -64,7 +50,7 @@
             this.radioMass.UseVisualStyleBackColor = true;
             this.radioMass.CheckedChanged += new System.EventHandler(this.RadioButton1_CheckedChanged);
             // 
-            // radiolength
+            // radioLength
             // 
             this.radiolength.AutoSize = true;
             this.radiolength.Location = new System.Drawing.Point(9, 72);
@@ -251,6 +237,131 @@
             this.radioArray.Text = "Array of values";
             this.radioArray.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioCustom);
+            this.groupBox1.Controls.Add(this.radioTime);
+            this.groupBox1.Controls.Add(this.radioMoney);
+            this.groupBox1.Controls.Add(this.radioMass);
+            this.groupBox1.Controls.Add(this.radioLength);
+            this.groupBox1.Location = new System.Drawing.Point(12, 27);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(168, 100);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Conventer Type";
+            // 
+            // radioMoney
+            // 
+            this.radioMoney.AutoSize = true;
+            this.radioMoney.Location = new System.Drawing.Point(97, 29);
+            this.radioMoney.Name = "radioMoney";
+            this.radioMoney.Size = new System.Drawing.Size(57, 17);
+            this.radioMoney.TabIndex = 2;
+            this.radioMoney.TabStop = true;
+            this.radioMoney.Text = "Money";
+            this.radioMoney.UseVisualStyleBackColor = true;
+            // 
+            // radioTime
+            // 
+            this.radioTime.AutoSize = true;
+            this.radioTime.Location = new System.Drawing.Point(97, 52);
+            this.radioTime.Name = "radioTime";
+            this.radioTime.Size = new System.Drawing.Size(48, 17);
+            this.radioTime.TabIndex = 3;
+            this.radioTime.TabStop = true;
+            this.radioTime.Text = "Time";
+            this.radioTime.UseVisualStyleBackColor = true;
+            // 
+            // radioCustom
+            // 
+            this.radioCustom.AutoSize = true;
+            this.radioCustom.Location = new System.Drawing.Point(57, 76);
+            this.radioCustom.Name = "radioCustom";
+            this.radioCustom.Size = new System.Drawing.Size(94, 17);
+            this.radioCustom.TabIndex = 4;
+            this.radioCustom.TabStop = true;
+            this.radioCustom.Text = "Custom money";
+            this.radioCustom.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radioSeconds);
+            this.groupBox2.Controls.Add(this.radioMinutes);
+            this.groupBox2.Controls.Add(this.radioHours);
+            this.groupBox2.Location = new System.Drawing.Point(214, 27);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(110, 93);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Time output";
+            // 
+            // radioHours
+            // 
+            this.radioHours.AutoSize = true;
+            this.radioHours.Location = new System.Drawing.Point(7, 20);
+            this.radioHours.Name = "radioHours";
+            this.radioHours.Size = new System.Drawing.Size(53, 17);
+            this.radioHours.TabIndex = 0;
+            this.radioHours.TabStop = true;
+            this.radioHours.Text = "Hours";
+            this.radioHours.UseVisualStyleBackColor = true;
+            // 
+            // radioMinutes
+            // 
+            this.radioMinutes.AutoSize = true;
+            this.radioMinutes.Location = new System.Drawing.Point(6, 43);
+            this.radioMinutes.Name = "radioMinutes";
+            this.radioMinutes.Size = new System.Drawing.Size(62, 17);
+            this.radioMinutes.TabIndex = 1;
+            this.radioMinutes.TabStop = true;
+            this.radioMinutes.Text = "Minutes";
+            this.radioMinutes.UseVisualStyleBackColor = true;
+            // 
+            // radioSeconds
+            // 
+            this.radioSeconds.AutoSize = true;
+            this.radioSeconds.Location = new System.Drawing.Point(7, 67);
+            this.radioSeconds.Name = "radioSeconds";
+            this.radioSeconds.Size = new System.Drawing.Size(67, 17);
+            this.radioSeconds.TabIndex = 2;
+            this.radioSeconds.TabStop = true;
+            this.radioSeconds.Text = "Seconds";
+            this.radioSeconds.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioArray);
+            this.groupBox3.Controls.Add(this.radioSingle);
+            this.groupBox3.Location = new System.Drawing.Point(353, 31);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(98, 89);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Segment type";
+            // 
+            // radioSingle
+            // 
+            this.radioSingle.AutoSize = true;
+            this.radioSingle.Location = new System.Drawing.Point(7, 25);
+            this.radioSingle.Name = "radioSingle";
+            this.radioSingle.Size = new System.Drawing.Size(83, 17);
+            this.radioSingle.TabIndex = 0;
+            this.radioSingle.TabStop = true;
+            this.radioSingle.Text = "Single value";
+            this.radioSingle.UseVisualStyleBackColor = true;
+            // 
+            // radioArray
+            // 
+            this.radioArray.AutoSize = true;
+            this.radioArray.Location = new System.Drawing.Point(7, 49);
+            this.radioArray.Name = "radioArray";
+            this.radioArray.Size = new System.Drawing.Size(95, 17);
+            this.radioArray.TabIndex = 1;
+            this.radioArray.TabStop = true;
+            this.radioArray.Text = "Array of values";
+            this.radioArray.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -265,8 +376,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.radioMass);
             this.Name = "Form1";
-            this.Text = "Form1";
            // this.Load += new System.EventHandler(this.Form1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -274,6 +385,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,12 +394,11 @@
         #endregion
 
         private System.Windows.Forms.RadioButton radioMass;
-        private System.Windows.Forms.RadioButton radiolength;
+        private System.Windows.Forms.RadioButton radioLength;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button btnConvert;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioCustom;
         private System.Windows.Forms.RadioButton radioTime;
@@ -299,6 +410,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton radioArray;
         private System.Windows.Forms.RadioButton radioSingle;
+        private System.Windows.Forms.Button btnConvert;
     }
 }
 

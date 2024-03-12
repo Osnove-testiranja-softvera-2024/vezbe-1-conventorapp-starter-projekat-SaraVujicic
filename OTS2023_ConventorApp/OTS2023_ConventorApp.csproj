@@ -53,16 +53,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IConvert.cs" />
-    <Compile Include="ICustomMoneyConvert.cs" />
-    <Compile Include="ITimeConvert.cs" />
-    <Compile Include="TimeConventer.cs" />
-    <Compile Include="Utilities.cs" />
-    <Compile Include="LengthConventer.cs" />
-    <Compile Include="MassConventer.cs" />
-    <Compile Include="MoneyConventer.cs" />
+    <None Include="IConvert" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Time.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
