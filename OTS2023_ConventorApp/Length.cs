@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace OTS2023_ConventorApp
 {
-    internal interface IConvert
+    internal class Length
     {
-        public void Convert1();
     }
 }
